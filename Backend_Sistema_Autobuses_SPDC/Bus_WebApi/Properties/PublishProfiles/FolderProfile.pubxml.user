@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <History>True|2023-12-02T03:30:34.6707075Z;True|2023-12-01T21:00:35.5342740-06:00;False|2023-12-01T20:55:23.3469265-06:00;</History>
+    <_PublishTargetUrl>C:\Users\admin\Desktop\Publicacion_Sistema_Buses</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Choferes";
+}
+
+<h1 style="margin-top:40px;">Choferes</h1>
+
+<p>
+    <a asp-action="AgregarChoferes" asp-controller="Choferes">Registrar Chofer</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Unidades_asignadas)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Unidades_asignadas)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "ModificarChoferes", new { Id = item.Id }) |
+                    @Html.ActionLink("Eliminar", "EliminarChofer", new { Id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
